@@ -2,6 +2,7 @@ class ClassroomsController < ApplicationController
 
   def show
     @classroom = Classroom.find(params[:id])
+    binding.pry
   end
 
   def index
