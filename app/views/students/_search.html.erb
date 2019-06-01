@@ -1,4 +1,4 @@
-<%= form_for search do |f| %>
+<%= form_for (search, url: students_path,  method: "GET") do |f| %>
   <h1> Search Form :</h1>
   <fieldset>
     <%= yield f %>
